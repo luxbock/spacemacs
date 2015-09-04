@@ -122,7 +122,8 @@
                             (spacemacs|define-text-object ";"
                                                           "elisp-comment"
                                                           ";; "
-                                                          ""))))
+                                                          "")))
+  (add-hook 'edebug-mode-hook 'evil-normalize-keymaps))
 
 (defun emacs-lisp/post-init-flycheck ()
   ;; Don't activate flycheck by default in elisp
